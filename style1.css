@@ -1,0 +1,126 @@
+/* This is a stylesheet for our new homepage */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	background: #D2B78F;
+}
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	font: baskerville, palatino, 'palatino linotype', georgia, serif;
+	border: 2px solid black;
+}
+
+div {
+	display: block;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+img {
+	border: 5px solid green;
+	width: 40%;
+	padding: 2px 2px 2px 2px;
+	margin: 10px 10px 10px 10px;
+}
+
+#navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation li {
+	display: block;
+	float: left;
+	margin: 2px;
+	padding: 5px;
+	background-color: #a9a9a9;
+	color: #FFFFFF;
+}
+
+.list {
+	list-style-position: inside;
+}
+
+.content {
+	margin-top: 80px;
+	padding: 0 5px 0 5px;
+}
+
+.musician {
+	font-weight: bold;
+	color: red;
+}
+
+.images {
+	border: 2px solid black;
+	width: 75%;
+}
+
+#header {
+	background-color: #a9a9a9;
+	display: block;
+	position: fixed;
+	width: 960px;
+	height: 75px;
+	/*list-style: none;*/
+}
+
+#footer {
+	background-color: #a9a9a9;
+	clear: both;
+	padding: 25px 0 15px;
+}
+
+.article {
+	float: left;
+	/*width: 615px;*/
+	width: 64%;
+	/*padding-left: 25px;*/
+	padding-left: 2.5%;
+}
+
+.sidebar {
+	float: right;
+	/*width: 243px;*/
+	width: 26%;
+	padding: 0 25px;
+	border-left: 1px solid #a9a9a9;
+}
+
+
+
+
