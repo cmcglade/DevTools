@@ -1,0 +1,67 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1 {
+	font-family: Arial, Helvetics, sans-serif;
+	font-size: 2em;
+	color: #a9a9a9;
+	padding: 1em auto;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+/*adding padding and margin to bring the content into the viewport*/
+
+body {
+	padding-left: 10px;
+	/*width: 100%;*/
+	margin: 5%;
+}
+
+form {
+	border: 1px solid black;
+	padding: 5px;
+	width: 85%;
+	background-color: #a9a9a9;
+}
+
+input {
+	size: 100%;
+}
+
+/*this class was an id applied only to the comment input.  here we are applying it to the name input as well*/
+
+.styled {
+	width: 80%;
+	/*height: 120px;*/
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: courier, serif;
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+	
