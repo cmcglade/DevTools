@@ -1,0 +1,142 @@
+1
+SOLUTION
+
+<?php  
+$color = array('white', 'green', 'red', 'blue', 'black');  
+echo "The memory of that scene for me is like a frame of film forever frozen at that moment: the $color[2] carpet, the $color[1] lawn, the $color[0] house, the leaden sky. The new president and his first lady. - Richard M. Nixon"  
+?>  
+
+2
+SOLUTION
+
+<?php  
+$color = array('white', 'green', 'red');  
+foreach ($color as $c)  
+{  
+echo "$c, ";  
+}  
+sort($color);  
+echo "<ul>";  
+foreach ($color as $y)  
+{  
+echo "<li>$y</li>";  
+}  
+echo "</ul>";  
+?> 
+
+3
+SOLUTION
+
+<?php  
+$ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg",  
+"Belgium"=> "Brussels", "Denmark"=>"Copenhagen",  
+"Finland"=>"Helsinki", "France" => "Paris",  
+"Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana",  
+"Germany" => "Berlin", "Greece" => "Athens",  
+"Ireland"=>"Dublin", "Netherlands"=>"Amsterdam",  
+"Portugal"=>"Lisbon", "Spain"=>"Madrid",  
+"Sweden"=>"Stockholm", "United Kingdom"=>"London",  
+"Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius",  
+"Czech Republic"=>"Prague", "Estonia"=>"Tallin",  
+"Hungary"=>"Budapest", "Latvia"=>"Riga","Malta"=>"Valetta",  
+"Austria" => "Vienna", "Poland"=>"Warsaw") ;  
+asort($ceu) ;  
+foreach($ceu as $country => $capital)  
+{  
+echo "The capital of $country is $capital <br>" ;  
+}  
+?>  
+
+4
+SOLUTION
+
+<?php  
+ $x = array(1, 2, 3, 4, 5);  
+ var_dump($x);  
+ unset($x[3]);  
+ $x = array_values($x);  
+ echo '  
+';  
+var_dump($x);  
+?> 
+
+5
+SOLUTION
+
+<?php  
+$color = array(4 => 'white', 6 => 'green', 11=> 'red');  
+echo reset($color);  
+?>  
+
+7
+SOLUTION
+
+<?php  
+$original = array( '1','2','3','4','5' );  
+echo 'Original array : <br>';  
+foreach ($original as $x)   
+{echo "$x ";}  
+$inserted = '$';  
+array_splice( $original, 3, 0, $inserted );   
+echo " <br> After inserting '$' the array is :<br>";  
+foreach ($original as $x)   
+{echo "$x ";}  
+?> 
+
+
+8
+SOLUTION
+
+<?php  
+echo "  
+Associative array : Ascending order sort by value  
+";  
+$array2=array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40"); asort($array2);  
+foreach($array2 as $y=>$y_value)  
+{  
+echo "Age of ".$y." is : ".$y_value."  
+";  
+}  
+echo "  
+Associative array : Ascending order sort by Key  
+";  
+$array3=array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40"); ksort($array3);  
+foreach($array3 as $y=>$y_value)  
+{  
+echo  
+"Age of ".$y." is : ".$y_value."  
+";  
+}  
+echo "  
+Associative array : Descending order sorting by Value  
+";  
+$age=array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40");  
+arsort($age);  
+foreach($age as $y=>$y_value)  
+{  
+echo "Age of ".$y." is : ".$y_value."  
+";  
+}  
+echo "  
+Associative array : Descending order sorting by Key  
+";  
+$array4=array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40"); krsort($array4);  
+foreach($array4 as $y=>$y_value)  
+{  
+echo "Age of ".$y." is : ".$y_value."  
+";  
+}   
+?> 
+
+
+14
+
+SOLUTION
+
+<?php  
+$my_array = array("abcd","abc","de","hjjj","g","wer");  
+$new_array = array_map('strlen', $my_array);  
+// Show maximum and minimum string length using max() function and min() function   
+echo "The shortest array length is " . min($new_array) .  
+". The longest array length is " . max($new_array).'.';  
+?>  
