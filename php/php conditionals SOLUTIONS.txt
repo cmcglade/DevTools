@@ -1,0 +1,138 @@
+1.
+
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<title>If-Else Statement</title>
+</head>
+ 
+<body>
+<h2>If-Else Statement</h2>
+ 
+<?php
+ 
+$currMonth=date('F', time());
+if ($currMonth == 'August'){
+  echo "<p>It's August, so it's really hot.</p>";
+}else{
+  echo "<p>Not August, so at least not very humid.</p>";
+}
+  
+?>
+ 
+</body>
+</html>
+
+
+2. 
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<title>Simple Loops</title>
+</head>
+ 
+<body>
+<h2>Simple Loops</h2>
+ 
+<?php
+ 
+echo "<p>\n";
+ 
+$counter = 1;
+while ($counter < 10){
+  echo 'abc ';
+  $counter++;
+}
+ 
+echo "</p>\n";
+echo "<p>\n";
+ 
+$counter = 1;
+do{
+  echo 'xyz ';
+  $counter++;
+} while ($counter < 10) ;
+ 
+echo "</p>\n";
+ 
+for ($x=1; $x<10; $x++){
+  echo "$x ";
+}
+//The space inside the "" is necessary to separate the numbers.  
+ 
+//Generate ordered list.  
+echo "\n<ol>";
+for ($x='A'; $x<'G'; $x++){
+  echo "<li>Item $x</li>\n";
+  }
+echo "\n</ol>";
+//Note that letters may be used in the for loop in place of numbers.
+  
+?>
+ 
+</body>
+</html>
+
+3.
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<title>Squares for the Numbers 1-12</title>
+</head>
+ 
+<body>
+<h2>Squares for the Numbers 1-12</h2>
+ 
+<?php
+  
+for ($x=1; $x<=12; $x++){
+  $result = $x * $x;
+  echo "$x * $x = $result <br />\n";
+}
+   
+?>
+ 
+</body>
+</html>
+
+
+4.
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<title>Nested Loop Multiplication Table</title>
+</head>
+ 
+<body>
+<h2>Nested Loop Multiplication Table</h2>
+ 
+<?php
+//Generate an HTML table
+echo "<table border=\"1\">";
+   
+//Generate table data showing the numbers 1-7 multiplied by each other, 
+//starting with the rows. 
+for ($row=1; $row<=7; $row++){
+  echo "<tr>\n";
+  //Generate each entry in the row to create the columns.
+  for ($col=1; $col<=7; $col++){
+    //First, do the math.
+    $x=$col * $row;
+    //Then send the value to the table with the table data tags.   
+    echo "<td>$x</td>\n";
+  }
+  echo "</tr>";
+}
+echo "</table>";
+?>
+ 
+</body>
+</html>

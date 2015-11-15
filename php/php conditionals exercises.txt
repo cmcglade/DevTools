@@ -1,0 +1,55 @@
+1. If/else
+
+In this PHP exercise, you will use a conditional statement to determine what gets printed to the browser. Write a script that gets the current month and prints one of the following responses, depending on whether it's August or not:
+
+It's August, so it's really hot.
+Not August, so at least not very humid.
+
+Hint: the function to get the current month is 'date('F', time())' for the month's full name.
+
+
+
+2. Simple loops
+
+In this PHP exercise, you will put all the loops through their paces. Write a script that will print the following to the browser:
+
+abc abc abc abc abc abc abc abc abc
+
+xyz xyz xyz xyz xyz xyz xyz xyz xyz
+
+1 2 3 4 5 6 7 8 9
+
+Item A
+Item B
+Item C
+Item D
+Item E
+Item F
+
+Create the 'abc' row with a while loop, the 'xyz' row with a do-while loop, and the last two sections with for loops. Remember to include HTML and source code line breaks in your output. No arrays allowed in this solution.
+
+
+3. For Loops
+
+Loops are very useful in creating lists and tables. In this PHP exercise, you will use a loop to create a list of equations for squares.
+
+Using a for loop, write a script that will send to the browser a list of squares for the numbers 1-12.
+Use the format, "1 * 1 = 1", and be sure to include code to print each formula on a different line.
+
+
+4. 
+HTML tables involve a lot of repetitive coding - a perfect place to use for loops. You can do even more if you nest the for loops.
+
+In this PHP exercise, use two for loops, one nested inside another. Create the following multiplication table:
+
+1	2	3	4	5	6	7
+2	4	6	8	10	12	14
+3	6	9	12	15	18	21
+4	8	12	16	20	24	28
+5	10	15	20	25	30	35
+6	12	18	24	30	36	42
+7	14	21	28	35	42	49
+
+
+Unless you want to try your hand at CSS styling, don't be concerned about the appearance of the table, its borders and text alignment. The point of the exercise it to create the data and the table tags using the for loops.
+
