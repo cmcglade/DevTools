@@ -2,10 +2,11 @@
 <html lang ="en">
 <head>
 	<meta charset ="utf-8">
-	<title>Iterating through an array</title>
+	<title>Get, Post, and Cookie</title>
 </head>
 <body>
-	<h1>Iterate thru an array with foreach</h1>
+	<h1>Getting Info From users</h1>
+	
 	<?php
 		$names = array("christine", "sasha", "quinn", "cameron");
 		
