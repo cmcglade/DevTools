@@ -2,20 +2,70 @@
 <html lang ="en">
 <head>
 	<meta charset ="utf-8">
-	<title>Iterating through an array</title>
+	<title>Array functions</title>
 </head>
 <body>
-	<!--<h2>Array functions</h2>
+	
+	<!--<p>This is how we count the elements in an array</p>
+
+	<?php
+		$users = ["Mary", "Megan", "Odelia", "Jon", 
+				"Aline", "Ting", "Alejandro"];
+		$number_users = count($users);
+		echo "$number_users <br>";
+
+		print_r($users);
+
+		//echo count($users); 
+	?>
+
+	<br> 
+
+	<pre>
+	<?php print_r($users); ?>
+	</pre>
+
+	<ul>
+		<li><?php echo $users[0]; ?></li>
+		<li><?php echo $users[1]; ?></li>
+		<li><?php echo $users[2]; ?></li>
+		<li><?php echo $users[3]; ?></li>
+		<li><?php echo $users[4]; ?></li>
+		<li><?php echo $users[5]; ?></li>
+		<li><?php echo $users[6]; ?></li>
+		<li><?php echo $users[7]; ?></li>
+	</ul> -->
+
+	
+
+	<h2>Array functions</h2>
 	
 	<?php $numbers = array(8, 23, 56, 9, 15, 12);
 		print_r($numbers);
+	?>
+
+	<br>
+
+	<?php 
+
+		$names = array("Salima", "Antonio", "Krystal", "Christine");
+		print_r($names);
 	?>
 	
 	<p>Count:	<?php echo count($numbers); ?><br>
 	Max value:	<?php echo max($numbers); ?><br>
 	Min value:	<?php echo min($numbers); ?><br>
-	</p> -->
+	</p> 
+
+	<p>Count:	<?php echo count($names); ?><br>
+	Max value:	<?php echo max($names); ?><br>
+	Min value:	<?php echo min($names); ?><br>
+	</p> 
 	
+	
+
+
+
 	<!--<h2>Sorting values in arrays</h2>
 	<?php print_r($numbers); ?>
 	
