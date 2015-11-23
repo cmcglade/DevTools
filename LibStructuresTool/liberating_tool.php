@@ -53,6 +53,10 @@
 	<?php print_r($new_goals); ?>
 	
 	</pre>-->
+
+	<h1>Liberating Structures Stringing Tool</h1>
+
+	<p>Choose 4 - 7 goals from the list below, assigning them a number that puts them in priority order</p>
 	<form action ="" method="POST">
 	
 	<?php
