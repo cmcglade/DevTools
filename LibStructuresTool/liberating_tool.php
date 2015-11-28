@@ -10,17 +10,12 @@
 	<?php
 
 	$goals_string = file_get_contents('goals.txt');
-	//$goals = explode(";", $goals_string);
+	$struc_string = file_get_contents('structures.txt');
+	
 	
 	//take each item in the array and explode it into the number and string using = as the delimiter
 	
-	//for ($item=0; $goals[$item]; $item++) 
-	//	$new_pair=explode("=", $goals[$item]);
-		//$new_goals = array($new_pair[0] => $new_pair[1]);
-		//$item++;
 	
-	
-	//code found online that should be useful
 	$temp = explode(";", $goals_string);
 	$new_goals = array();
 	foreach ($temp as $value) {
@@ -29,6 +24,16 @@
 		$array[0] = trim($array[0], '\t\n\r');
 		//int($array[0]);
 		$new_goals[$array[0]] = $array[1];
+	}
+	
+	$temp = explode(";", $struc_string);
+	$new_struc = array();
+	foreach ($temp as $value) {
+		$array = explode('=', $value);
+		$array[1] = trim($array[1], '\t\n\r');
+		$array[0] = trim($array[0], '\t\n\r');
+		//int($array[0]);
+		$new_struc[$array[0]] = $array[1];
 	}
 
 	?>
@@ -54,9 +59,15 @@
 	
 	</pre>-->
 
+	<!--<pre>
+		
+	<?php print_r($new_struc); ?>
+	
+	</pre>-->
+	
 	<h1>Liberating Structures Stringing Tool</h1>
 
-	<p>Choose 4 - 7 goals from the list below, assigning them a number that puts them in priority order</p>
+	<p>Choose 4 - 7 goals from the list below, assigning them a number that puts them in priority order</p><br>
 	<form action ="" method="POST">
 	
 	<?php
@@ -65,6 +76,12 @@
 			echo "<input id='priority' type='number' name='$number'><br/><br/>";	
 		}
 	?>
+	
+	<input type="submit"/>
 	</form>
+	
+	<!--<?php print_r($_POST); ?>-->
+	
+	
 </body>
 </html>
