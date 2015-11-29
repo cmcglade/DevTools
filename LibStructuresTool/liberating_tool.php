@@ -72,8 +72,10 @@
 	
 	<?php
 		foreach($new_goals as $number => $goal_statement) {
+			//echo "<div id='goal'>";
 			echo "<label id='goal'>$goal_statement</label>";
 			echo "<input id='priority' type='number' name='$number'><br/><br/>";	
+			//echo "</div>";
 		}
 	?>
 	
