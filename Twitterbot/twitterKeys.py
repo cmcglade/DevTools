@@ -7,7 +7,3 @@ consumer_secret = "W652K2yDkjk69MEop362FLWvItnkC1ZNZviaAHETKsBjAKgTLW"
 access_token = "4839349319-x7P941z7ZAAx6F514PTseE3q7T1T9yc3HuCIvU2"
 access_token_secret = "8ZWRzLzUlrjT2PhXvVtPD0Nd8Kj2QFLo3x5tAqIccGHbs"
 
-[settings]
-search_query:#yourHashtag
-# Leave empty for all languages
-tweet_language: "english"

@@ -2,5 +2,6 @@
 <!-- Komodo Project File - DO NOT EDIT -->
 <project id="9692a250-c731-6849-8b91-bc4e3098ba6c" kpf_version="5" name="MyProject.twitterbot.komodoproject">
 <preference-set idref="9692a250-c731-6849-8b91-bc4e3098ba6c" id="project" preftype="project">
+  <long id="prefs_version">1</long>
 </preference-set>
 </project>
